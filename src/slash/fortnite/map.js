@@ -15,7 +15,7 @@ module.exports.run = async (inter) => {
         const embed = new discord.MessageEmbed()
             .setColor('DARK_BUT_NOT_BLACK')
             .setTitle('Fortnite Map')
-            .setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()})
+            .setFooter({name: client.user.username, iconURL: client.user.displayAvatarURL()})
             .setImage(req.data.images.pois)
         
         inter.reply({embeds: [embed]})
